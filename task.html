@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Task
+</title>
+
+<meta lang = "eng-US">
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link rel = "stylesheet" href = "style.css">
+
+<script>
+
+function add()
+{var a = Number(document.getElementById("number_one").value);
+var b = Number(document.getElementById("number_two").value);
+var c = a+b;
+var d = document.getElementById("answer");
+d.innerHTML = "Answer :- "  +  c;}
+
+
+function sub()
+{var a = document.getElementById("number_one").value;
+var b = document.getElementById("number_two").value;
+var c = a-b;
+var d = document.getElementById("answer");
+d.innerHTML = "Answer :- "  +  c;}
+
+function mul()
+{var a = document.getElementById("number_one").value;
+var b = document.getElementById("number_two").value;
+var c = a*b;
+var d = document.getElementById("answer");
+d.innerHTML = "Answer :- "  +  c;}
+
+
+function div()
+{var a = document.getElementById("number_one").value;
+var b = document.getElementById("number_two").value;
+var c = a/b;
+var d = document.getElementById("answer");
+d.innerHTML = "Answer :- "  +  c;}
+
+
+function rem()
+{var a = document.getElementById("number_one").value;
+var b = document.getElementById("number_two").value;
+var c = a%b;
+var d = document.getElementById("answer");
+d.innerHTML = "Answer :- "  +  c;}
+
+
+</script>
+
+</head>
+<body>
+
+<h1 align = "center">Arithmetic Operator</h1>
+<hr>
+
+<div id = "box">
+
+<form>
+
+<div id = "answer"></div>
+<input type = "number" name = "number" id = "number_one" placeholder = "first number"/>
+<input type = "number" name = "number" id = "number_two" placeholder = "second number"/>
+
+</form>
+
+<button id = "add" onclick = "add()">Add (+)</button>
+<button id = "subtract" onclick = "sub()">Subtract (-)</button><br>
+<button id = "multiply" onclick = "mul()">Multiply (x)</button>
+<button id = "divide" onclick = "div()">Divide (/)</button><br>
+<button id = "reminder" onclick = "rem()">Reminder (%)</button>
+<input type = "reset" name = "reset" id = "reset" value = "Reset"/>
+
+
+</div>
+
+</body>
+</html>
